@@ -2,6 +2,7 @@ package no.hvl.dat108.f08;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Eksempel4og5 {
 
@@ -24,9 +25,7 @@ public class Eksempel4og5 {
 //		}
 		
 		//Med streams:
-		people.stream()
-				.filter(p -> p.getFirstName().startsWith("C"))
-				.forEach(System.out::println);
+		//TODO
 
 		
 		//2 - Lage en liste av etternavnene til de som er over 50 år
@@ -40,28 +39,8 @@ public class Eksempel4og5 {
 //		}
 //		System.out.println(etternavnene);
 		
-		//Med streams:							// Ligner på SQL !!		
-		List<String> etternavnene = people.stream() //From people
-				.filter(p -> p.getAge() > 50)		//Where age > 50
-				.map(Person::getLastName)			//Select lastName
-//				.collect(Collectors.toList());	// I Java 15-
-				.toList(); 						// I Java 16+ kan du skrive toList() direkte
-		
-		System.out.println(etternavnene);
+		//Med streams:		
+		//TODO
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

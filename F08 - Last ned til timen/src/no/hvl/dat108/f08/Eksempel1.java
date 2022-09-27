@@ -14,7 +14,7 @@ import java.util.function.Function;
  */
 public class Eksempel1 {
 	
-	public static List<String> tilListeAvString(List<Person> liste, Function<Person, String> omforming) {
+	public static List<String> tilListeAvString(List<Person> liste, Function<String, Person> omforming) {
 		
 		List<String> resultat = new ArrayList<>();
 		for (Person p : liste) {
@@ -32,8 +32,9 @@ public class Eksempel1 {
 				new Person("Charlotte", "Bronte", 45),
 				new Person("Matthew", "Arnold", 39));
 		
-		List<String> fornavnene = tilListeAvString(people, Person::getFirstName);
-		System.out.println(fornavnene);		
+		List<String> fornavnene = tilListeAvString(people, p -> p.getFirstName());
+		System.out.println(fornavnene);
+
 	}
 
 }
