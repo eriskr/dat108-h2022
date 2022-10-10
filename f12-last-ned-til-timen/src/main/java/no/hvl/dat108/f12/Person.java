@@ -34,6 +34,14 @@ public class Person {
 	public void setFdato(LocalDate fdato) {
 		this.fdato = fdato;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Person{" +
+				"navn='" + navn + '\'' +
+				", mobil='" + mobil + '\'' +
+				", hoydecm=" + hoydecm +
+				", fdato=" + fdato +
+				'}';
+	}
 }

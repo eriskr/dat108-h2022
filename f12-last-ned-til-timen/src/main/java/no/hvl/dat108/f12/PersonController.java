@@ -3,6 +3,7 @@ package no.hvl.dat108.f12;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -15,8 +16,11 @@ public class PersonController {
 	}
 
 	@PostMapping("/lagrePerson")
-	public String lagrePerson() {
-		return "";
+	public String lagrePerson(@ModelAttribute("person") Person person) {
+		System.err.println(person);
+		System.err.println("Lagrer i database...");
+
+		return "personKvitteringView";
 	}
 
 	@GetMapping("/registreringok")

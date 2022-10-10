@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="JavaSE-12" project-jdk-type="JavaSDK">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/f11c-hiddenparameter" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/f10-hallo/pom.xml" />
+        <option value="$PROJECT_DIR$/f11a-registreringsskjema/pom.xml" />
+        <option value="$PROJECT_DIR$/f11b-primtalltest/pom.xml" />
+        <option value="$PROJECT_DIR$/f11c-hiddenparameter/pom.xml" />
+        <option value="$PROJECT_DIR$/f12-last-ned-til-timen/pom.xml" />
+        <option value="$PROJECT_DIR$/f15-sesjoner-innlogging-lastned/pom.xml" />
+        <option value="$PROJECT_DIR$/f12-gjort-i-timen/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="JavaSE-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$" />
   </component>
 </project>
